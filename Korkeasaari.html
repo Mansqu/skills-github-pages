@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title> Matkailu portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- lisää meta-elementtejä -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+
+        <nav id="topnav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <h1 class="logo"> Mansku's photos
+            </h1>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="Rannat.html">Mellsten</a></li>
+                <li><a href="LittleItaly.html">Little italy</a></li>
+                <li><a href="Korkeasaari.html">Korkeasaari</a></li>
+                <li><a href="Yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+
+        <a href="javascript:void (0); " class="icon" onclick="navigation ()">
+            <i class="fa fa-navicon"></i></a>
+
+
+        <script>
+            function navigation() {
+                var x = document.getElementById("topnav");
+                if (x.className === "navbar") {
+                    x.className += "responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            }
+        </script>
+    </header>
+
+    <main>
+
+        <div class="flex_container">
+            <div class="flex_item">
+                <h2>Korkeasaari</h2>
+                <div id="container1">
+                    <p> Iskikö lomalle vain viileitä päiviä? Ei hätää, nämä
+                        ovat parhaimmat päivät korkeasaarelle, kun eläimet ovat aktiivisempia.
+                        Tule vierailemaan erimerkiksi kissalaaksossa, lintujen luona tai
+                        heitä moikat karhuille.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex_item">
+
+                <img src="kuvat/Kissa.png" alt="html5 tiikeri" Title="tiikeri tulossa kohti" height="400" width="300">
+            </div>
+        </div>
+
+        <div class="full width">
+            <p> Helsingin itäpuolella, mustikkamaalla löytyy monelle tuttu korkeasaari. Tänne on
+                helppo saapua, niin julkisilla kuin omalla autolla. Autolle löytyy hyvin parkkitilaa
+                kauppakeskus Redistä. Korkeasaaren toiminnan perusta on eläinten sekä luonnon suojelu,
+                joten täällä voi hyvällä omatunnolla vierailla. Eläinten virikkeellistämiseen sekä tarhoihin
+                on panostettu sekä eläimiä hoitavat alan ammattilaiset. Alueella voi nähdä
+                myös esitelmiä miten korkeasaari osallistuu erilaisiin tutkimuksiin ja näin kerryttää
+                sekä kehittää tietoa suojelusta. Korkeasaaressa on myös villieläinsairaala, johon
+                apua tarvitsevia eläimiä toimitetaan.
+            </p>
+        </div>
+
+    </main>
+</body>
+
+
+</html>

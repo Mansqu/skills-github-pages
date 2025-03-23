@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Matkailu portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- lisää meta-elementtejä -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+<header>
+
+    <nav id="topnav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <h1 class="logo"> Mansku's photos</h1>
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="Rannat.html">Mellsten</a></li>
+            <li><a href="LittleItaly.html">Little italy</a></li>
+            <li><a href="Korkeasaari.html">Korkeasaari</a></li>
+            <li><a href="Yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+
+    <a href="javascript:void (0); " class="icon" onclick="navigation ()">
+        <i class="fa fa-navicon"></i></a>
+
+
+    <script>
+        function navigation() {
+            var x = document.getElementById("topnav");
+            if (x.className === "navbar") {
+                x.className += "responsive";
+            } else {
+                x.className = "navbar"
+            }
+        }
+    </script>
+</header>
+
+<main>
+    <div class="flex_container">
+        <div class="flex_item">
+            <h2> Mellsten</h2>
+            <div id="container3">
+
+                <p> Vain 15 minuuttia helsingistä, kehä 2 päädystä löytyy iki ihana
+                    Mellstenin ranta. Autolla pääset suoraan rantaan ja tuntuu kuin voisit jo autosta
+                    tuntea meren suolaisen tuoksun, sekä kuulla kuinka laineet osuvat rantaan. Mellsten toimii
+                    kesällä säällä kuin säällä, mutta aurinkoisena päivänä täällä hurahtaa nopeasti
+                    useita tunteja.
+                </p>
+            </div>
+        </div>
+        <div class="flex_item">
+            <img src="kuvat/Mellsten.png" alt="html5 mellsten" title="kuva rannasta" width="400" height="200">
+        </div>
+    </div>
+    <div class="full width">
+        <p> Rantaa on toista kilometriä, joka tarjoaa monia erilaisia
+            mahdollisuuksia. Täällä voi nähdä mm. purheveneitä, suppailijoita, vesijettejä
+            sekä kauempana risteilyalusten liikkuvan. Rantaviivalta löytyy myös hiljaisempia
+            alueita, jossa esim. kirjan lukeminen on silkkaa yleellisyyttä. </p>
+
+        <p> Alue tarjoaa monia vaihtoehtoja liikunnalle. Täällä voit kävellä
+            merellisissä maisemissa, pelata lentopalloa tai nauttia päivästä uimarannalla.
+            Rannan varustukseen kuuluu myös cafe mellsten. Kahvilan valikoimista
+            löytää esimerkiksi maukasta italialaista pizzaa, jota voi nauttia kahvilan terasseilla.
+            Kahvilan vierestä löytyy myös italialainen jäätelökioski. Näitä makuja ei voita mikään.</p>
+    </div>
+</main>
+
+<footer>
+    <p> Mansku's photos. Löydät meidät myös instagramista.</p>
+</footer>
+
+</body>
+
+</html>

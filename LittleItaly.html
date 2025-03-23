@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Matkailu portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- lisää meta-elementtejä -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav id="topnav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <h1 class="logo">Mansku's photos</h1>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="Rannat.html">Mellsten</a></li>
+                <li><a href="LittleItaly.html">Little italy</a></li>
+                <li><a href="Korkeasaari.html">Korkeasaari</a></li>
+                <li><a href="Yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+
+        <a href="javascript:void (0); " class="icon" onclick="navigation ()">
+            <i class="fa fa-navicon"></i></a>
+
+
+        <script>
+            function navigation() {
+                var x = document.getElementById("topnav");
+                if (x.className === "navbar") {
+                    x.className += "responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            }
+        </script>
+    </header>
+
+    <main>
+        <h2> Little italy festival</h2>
+        <div class="flex_container">
+
+            <div class="flex_item">
+                <img src="kuvat/Sitruuna.png" alt="html5 sitruuna" title="sitruunalaatikko" width="200" height="300">
+                <img src="kuvat/Torrone.png" alt="html5 torrone" title="Italia nougat torrone" width="200" height="300">
+            </div>
+
+            <div class="flex_item">
+                <div id="container2">
+                    <p> Kuvittele kesäpäivä italian rennossa kulttuurissa. Musiikki pauhaa,
+                        tunnelma on rempseä ja voit jo melkein tuntea sen mehevän, tomaattisen pizzan
+                        maun suussasi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="full-width">
+            <p> Little italy festival järjestetään perinteisesti helsingissä heinäkuussa.
+                Tapahtumassa on nähtävillä monia ruoka- sekä viinikojuja, joten kannattaa
+                lähteä nälkäisenä. Taustalla soi italialainen musiikki, ja alueella on
+                esillä italialaisia autoja sekä moottoripyöriä. Ruokatauon lomassa voit käydä
+                ostamassa mm. pastaa, leivoksia sekä italialaista nougata, jotta sinun ei tarvitse
+                luopua italian tunnelmasta kotonakaan. Ruokakojujen työntekijät ovat usein
+                italialaisia tai ranskalaisia, joten täällä on helppo virittäytyä lomatunnelmaan.
+            </p>
+        </div>
+
+    </main>
+</body>
+
+</html>

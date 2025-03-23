@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Matkailu portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- lisää meta-elementtejä -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+<!-- tähän tulee sivun sisältö -->
+
+<body>
+  <header>
+
+    <nav id="topnav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <h1 class="logo">Mansku's photos</h1>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="Rannat.html">Mellsten</a></li>
+        <li><a href="LittleItaly.html">Little italy</a></li>
+        <li><a href="Korkeasaari.html">Korkeasaari</a></li>
+        <li><a href="Yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+
+    <a href="javascript:void (0); " class="icon" onclick="navigation ()">
+      <i class="fa fa-navicon"></i></a>
+
+
+    <script>
+      function navigation() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navbar") {
+          x.className += "responsive";
+        } else {
+          x.className = "navbar"
+        }
+      }
+    </script>
+  </header>
+
+  <img src="kuvat/Laituri.png" alt="html5 laituri" Title="kesäillan rauhallisuutta" height="400" width="600">
+  <p> Hei matkailu- ja tapahtuma-alan ammattilainen.
+    Olen valokuvausharrastaja, joka on löytänyt tapahtuma- sekä matkailukuvauksen omakseen.
+    Oliko sinulla juttu, joka tarvitsisi kuvaajaa sekä kiroittajaa, tai otatteko valmiita töitä vastaan?
+    Tässä portfoliossani näytän muutamia näytteitä töistäni. Tervetuloa . </p>
+
+</body>
+
+
+</html>
